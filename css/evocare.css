@@ -1,0 +1,46 @@
+:root {
+    --main-color: #ff9f0d;
+    --text-color: #fff;
+    --other-color: #212121;
+    --second-color: #9e9e9e;
+    --bg-color: #111111;
+    --big-font: 4.5rem;
+    --h2-font: 2.6rem;
+    --p-font: 1.1rem;
+}
+.quiz-container {
+    text-align: center;
+}
+.question {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+}
+
+.options button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    background: var(--second-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+.options button:hover {
+    background: var(--main-color)
+}
+.options button.correct {
+    background: #28a745;
+}
+.options button.wrong {
+    background: #dc3545;
+}
+.score {
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
