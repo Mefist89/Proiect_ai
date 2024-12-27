@@ -1,13 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../favicon.ico">
-    <link rel="icon" type="image/png" href="../favicon.png">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Test</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/realizare.css" />
+    <link rel="stylesheet" href="../css/evocare.css" />
+    <link rel="stylesheet" href="../css/chellange.css" />
+    <link rel="icon" type="image/x-icon" href="../favicon.ico" />
+    <link rel="icon" type="image/png" href="../favicon.png" />
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+    <!-- google fonts CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Etapa : Chellange</title>
+  </head>
+  <body>
+    <header id="#">
+      <a href="../index.html" class="logo"
+        ><i class="bx bxs-home"></i>AI Proiect</a
+      >
+      <ul class="navlist">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/evocare.html">Evocare</a></li>
+        <li><a href="../pages/realizare.html">Realizare</a></li>
+        <li><a href="../pages/reflectie.html">Reflectie</a></li>
+        <li><a href="../pages/extensie.html">Extensie</a></li>
+        <li><a href="../pages/chellange.html" class="active">Challenge</a></li>
+      </ul>
+      <div class="nav-icons">
+        <a href="#"><i class="bx bx-search-alt-2"></i></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
+    </header>
+    <section class="home" id="home">
+      <div class="home-text">
+        <h1>Chellange <span>AI</span></h1>
+        <!-- <a href="#" class="btn">Explore Menu <i class='bx bxs-right-arrow' ></i> </a> -->
+      </div>
+      <div class="home-img">
+        <img src="../img/hero.png" alt="main image" />
+      </div>
+    </section>
+
+    <section class="shop" id="shop">
+      <div class="middle-text">
+        <h4>Chellange creat de AI</h4>
+        <h2>Probe</h2>
+      </div>
+    </section>
+    <!--container-->
+    <section class="container">
+      <div class="container-box">
+        <i class="bx bx-check"></i>
+        <h3>Quiz Online</h3>
+        <h4>-1-</h4>
+      </div>
+
+      <div class="container-box">
+        <i class="bx bx-loader-circle"></i>
+        <h3>Număr repetări</h3>
+        <h4>-2-</h4>
+      </div>
+
+      <div class="container-box">
+        <i class="bx bxs-pencil"></i>
+        <h3>Spațiile libere</h3>
+        <h4>-3-</h4>
+      </div>
+
+      <div class="container-box">
+        <i class="bx bx-code"></i>
+        <h3>Crearea programelor</h3>
+        <h4>-4-</h4>
+      </div>
+    </section>
+    </section>
+    <!--container-->
+    <section class="about" id="about">
+      <div class="about-text">
+        <div class="middle-text">
+            <h4>Mini Quiz</h4>
+            <h2>Proba #1</h2>
+        </div>
+        <div class="quiz-container">
+          <div id="quiz">
+            <div class="question" id="question">Question text</div>
+            <div class="options" id="options">
+              <button onclick="checkAnswer(0)">Option 1</button>
+              <button onclick="checkAnswer(1)">Option 2</button>
+              <button onclick="checkAnswer(2)">Option 3</button>
+              <button onclick="checkAnswer(3)">Option 4</button>
+            </div>
+            <div class="score" id="score">Score: 0</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-text">
+          <div class="middle-text">
+              <h4>Număr de repetări</h4>
+              <h2>Proba #2</h2>
+          </div>
+          <div class="quiz-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Secvența de cod</th>
+                        <th>Număr de iterații</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>for (int i = 0; i < 5; i++)</code></td>
+                        <td><input type="number" id="q1" placeholder="Introduceți aici"></td>
+                    </tr>
+                    <tr>
+                        <td><code>for (int i = 1; i <= 10; i++)</code></td>
+                        <td><input type="number" id="q2" placeholder="Introduceți aici"></td>
+                    </tr>
+                    <tr>
+                        <td><code>for (int i = 0; i < 20; i += 2)</code></td>
+                        <td><input type="number" id="q3" placeholder="Introduceți aici"></td>
+                    </tr>
+                    <tr>
+                        <td><code>for (int i = 10; i > 0; i--)</code></td>
+                        <td><input type="number" id="q4" placeholder="Introduceți aici"></td>
+                    </tr>
+                    <tr>
+                        <td><code>for (int i = 1; i <= 15; i *= 2)</code></td>
+                        <td><input type="number" id="q5" placeholder="Introduceți aici"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div style="text-align: center;">
+                <button onclick="verificaRaspunsurile()" class="btn" >Verifică Răspunsurile</button>
+            </div>
+            <div class="feedback" id="feedback"></div>        
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-text">
+          <div class="middle-text">
+              <h4>Spații libere</h4>
+              <h2>Proba #3</h2>
+          </div>
+          <div class="quiz-container quiz-space">
+            <pre>
+                #include &lt;iostream&gt;
+                using namespace std;
+                
+                int main() {
+                    int sum = <input type="text" id="blank1" placeholder="___">;
+                
+                    for (int i = <input type="text" id="blank2" placeholder="___">; 
+                             i <= <input type="text" id="blank3" placeholder="___">; 
+                             i++) {
+                        sum += <input type="text" id="blank4" placeholder="___">;
+                    }
+                
+                    cout << "Suma este: " << <input type="text" id="blank5" placeholder="___"> << endl;
+                
+                    return 0;
+                }
+                        </pre>
+                    </div>
+                <div style="text-align: center;">
+                    <button class="btn" onclick="checkAnswers()">Verifică</button>
+                    <p class="feedback" id="result"></p>
+                </div>
+          </div>
+        </div>
+      </section>
+
+    <a href="#" class="scroll"><i class="bx bx-up-arrow-alt"></i></a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../js/chellange.js"></script>
+    <script src="../js/repetari.js"></script>
+    <!-- link to js -->
+    <script src="../js/app.js"></script>
+  </body>
 </html>
