@@ -265,3 +265,38 @@ function checkAnswer(selected) {
 }
 
 loadQuestion();
+
+function checkAnswers() {
+  const correctAnswers = [
+    "int i = 1; i <= 100; i++", // Inițializarea și condiția pentru for
+    "i % 2 == 0", // Condiția pentru numerele pare
+    "sum += i;", // Acțiunea pentru suma numerelor pare
+    "i % 2 != 0", // Condiția pentru numerele impare
+    "product *= i;", // Acțiunea pentru produsul numerelor impare
+  ];
+
+  const userAnswers = [
+    document.getElementById("forLoop").value.trim(),
+    document.getElementById("evenCondition").value.trim(),
+    document.getElementById("evenAction").value.trim(),
+    document.getElementById("oddCondition").value.trim(),
+    document.getElementById("oddAction").value.trim(),
+  ];
+
+  let correct = true;
+  for (let i = 0; i < correctAnswers.length; i++) {
+    if (userAnswers[i] !== correctAnswers[i]) {
+      correct = false;
+      break;
+    }
+  }
+
+  const result = document.getElementById("result");
+  if (correct) {
+    result.textContent = "Toate răspunsurile sunt corecte! Bravo!";
+    result.style.color = "green";
+  } else {
+    result.textContent = "Unele răspunsuri sunt greșite. Mai încearcă!";
+    result.style.color = "red";
+  }
+}

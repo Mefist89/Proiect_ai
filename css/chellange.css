@@ -16,6 +16,11 @@
   gap: 4rem;
 }
 
+.score,
+.question {
+  text-align: center;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -70,4 +75,12 @@ input {
 .quiz-space {
   display: flex;
   justify-content: center;
+}
+
+.first {
+  width: 30%;
+}
+
+.second {
+  text-align: left;
 }
